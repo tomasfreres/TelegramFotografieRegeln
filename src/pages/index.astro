@@ -1,0 +1,23 @@
+---
+import Instagram from "../components/Instagram.astro";
+import Rules from "../components/Rules.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<link rel="stylesheet" href="/styles/styles.css" />
+
+<Layout title="Fotografie Telegram Channel">
+	<main>
+		<div class="imageContainer">
+			<img class="groupImage" src="/assets/headerImage.jpg" />
+		</div>
+		<div class="rulesContainer">
+			<h2>Die Gruppenregeln:</h2>
+			<Rules />
+		</div>
+		<div class="instagramContainer">
+			<h2>Instagram der Chatmitglieder:</h2>
+			<Instagram />
+		</div>
+	</main>
+</Layout>

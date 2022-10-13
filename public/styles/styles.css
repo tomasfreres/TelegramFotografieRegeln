@@ -1,0 +1,43 @@
+main {
+    padding-left: calc(100vw * 0.33);
+    padding-right: calc(100vw * 0.33);
+    font-family: "JetBrains Mono";
+}
+
+.groupImage {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.imageContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.rulesContainer {
+    padding-bottom: 50px;
+}
+
+/* jetbrains-mono-regular - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/jetbrains-mono-v13-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("/assets/fonts/jetbrains-mono-v13-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/assets/fonts/jetbrains-mono-v13-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("/assets/fonts/jetbrains-mono-v13-latin-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("/assets/fonts/jetbrains-mono-v13-latin-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("/assets/fonts/jetbrains-mono-v13-latin-regular.svg#JetBrainsMono") format("svg");
+    /* Legacy iOS */
+}

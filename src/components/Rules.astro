@@ -1,0 +1,6 @@
+---
+import * as rules from "../Content/rules.md";
+import { marked } from "marked";
+---
+
+<p set:html={marked.parse(rules.rawContent())}></p>

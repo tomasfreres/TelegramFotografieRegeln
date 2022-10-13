@@ -1,0 +1,18 @@
+---
+import instagram from "../Content/instagram.json" assert { type: "json" };
+---
+
+<ul>
+    {
+        instagram.map((el) => {
+            return (
+                <li>
+                    <a href={`https://instagram.com/${el.instagram}`}>
+                        {el.tgUsername != "" ? "@" + el.tgUsername : ""}
+                        {el.name != "" ? "(" + el.name + ")" : ""}
+                    </a>
+                </li>
+            );
+        })
+    }
+</ul>
