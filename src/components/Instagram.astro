@@ -9,7 +9,11 @@ import instagram from "../Content/instagram.json" assert { type: "json" };
                 <li>
                     <a href={`https://instagram.com/${el.instagram}`}>
                         {el.tgUsername != "" ? "@" + el.tgUsername : ""}
-                        {el.name != "" ? "(" + el.name + ")" : ""}
+                        {el.name != ""
+                            ? `${el.tgUsername == "" ? "" : "("}` +
+                              el.name +
+                              `${el.tgUsername == "" ? "" : ")"}`
+                            : ""}
                     </a>
                 </li>
             );
