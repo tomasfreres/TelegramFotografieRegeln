@@ -1,6 +1,4 @@
 main {
-    padding-left: calc(100vw * 0.33);
-    padding-right: calc(100vw * 0.33);
     font-family: "JetBrains Mono";
 }
 
@@ -40,4 +38,11 @@ main {
         /* Safari, Android, iOS */
         url("/assets/fonts/jetbrains-mono-v13-latin-regular.svg#JetBrainsMono") format("svg");
     /* Legacy iOS */
+}
+
+@media (min-width:801px) {
+    main {
+        padding-left: calc(100vw * 0.33);
+        padding-right: calc(100vw * 0.33);
+    }
 }
