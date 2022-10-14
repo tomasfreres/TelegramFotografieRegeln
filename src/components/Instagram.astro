@@ -7,7 +7,10 @@ import instagram from "../Content/instagram.json" assert { type: "json" };
         instagram.map((el) => {
             return (
                 <li>
-                    <a href={`https://instagram.com/${el.instagram}`}>
+                    <a
+                        href={`https://instagram.com/${el.instagram}`}
+                        target="_blank"
+                    >
                         {el.tgUsername != "" ? "@" + el.tgUsername : ""}
                         {el.name != ""
                             ? `${el.tgUsername == "" ? "" : "("}` +
